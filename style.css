@@ -1,0 +1,110 @@
+
+body { background: url(img/bg.jpg) top center fixed !important; }
+
+.container { max-width: 938px; padding: 0 !important; }
+.logo iframe { height: 515px; }
+
+#game { color: #eee; font-size: 16px; padding: 15px; text-align: center; }
+#cover { float: left; width: 300px; padding-right: 20px; }
+
+#title { margin: 30px 0 30px 0; }
+#buy { float: none; margin: 0 auto; }
+
+#icons{ margin: 25px 10px; }
+
+#game::after {
+  content: "";
+  background: rgba(255,255,255,0.2);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
+
+@media (max-width: 440px) { 
+.logo img, .discord, .screen img, .foot img { width: 90%; }
+.logo iframe { height: 175px; } 
+.social .other { height: 70px; } }
+
+@media (max-width: 500px) { .logo iframe { height: 175px; } }
+@media (max-width: 600px) { .logo iframe { height: 215px; } #cover { float: none; display: block; margin: 0 auto; width: 300px; padding-right: 0px; } }
+@media (max-width: 800px) { .logo iframe { height: 315px; } }
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06); }
+	
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold; }
+	
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px; } 
+	
+.gallery { padding: 0 40px;}
+.gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2); }
+	
+.gallery .lightbox img:hover { transform: scale(1.05); box-shadow: 0 8px 15px rgba(0,0,0,0.3); }
+.gallery img { border-radius: 4px; }
+.baguetteBox-button { background-color: transparent !important; }
+
+@media(max-width: 768px) { body { padding: 0; } .container.gallery-container { border-radius: 0; } }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 99; }
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(http://www.resourcingworld.com/images/rw-preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px; }
+
+.other:hover { }
+
+.other:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none; }
+
+.other:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
