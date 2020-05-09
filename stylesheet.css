@@ -83,8 +83,6 @@ h1{
 
 .content_container{
 	padding-top:20px;
-	padding-left:10%;
-	padding-right:10%;
 	text-align: center;
 	letter-spacing: 2px;
 	font-weight:normal;
@@ -92,6 +90,11 @@ h1{
 	background-image:url(images/grunge-background.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
+}
+
+.content_container h1, .content_container h2, .content_container p {
+	padding-left:10%;
+	padding-right:10%;
 }
 
 .slide_button_holder{
