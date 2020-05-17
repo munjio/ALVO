@@ -9,7 +9,10 @@ html, body{
 }
 
 body{
-	background-color:#333;
+	background-image: url(images/grunge-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 	color:#FFF;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -30,7 +33,8 @@ h1{
 .topnav {
   min-height:48px;
   overflow: hidden;
-  background-color: #333;
+  background-color:red;
+    background-image: linear-gradient(#900, #600); 
   text-transform: uppercase;
   font-weight: bold;
   position: fixed;
@@ -59,13 +63,11 @@ h1{
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
   color: white;
 }
 
 .topnav a:nth-child(1).active {
   color: white;
-   background-color: #333;
 }
 
 .topnav .icon {
@@ -76,25 +78,18 @@ h1{
   
 .float_container{
 	width:100%;
-	background-image:url(images/grunge-background.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
+	
 }
 
 .content_container{
 	padding-top:20px;
+	padding-left:10%;
+	padding-right:10%;
 	text-align: center;
 	letter-spacing: 2px;
 	font-weight:normal;
 	font-family:Tahoma, Geneva, sans-serif;
-	background-image:url(images/grunge-background.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-
-.content_container h1, .content_container h2, .content_container p {
-	padding-left:10%;
-	padding-right:10%;
+	
 }
 
 .slide_button_holder{
