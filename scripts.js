@@ -8,6 +8,9 @@ $(document).ready(function(e) {
 		}else if($(this).val() == "3"){
 			window.location.href = "../es/index.html";
 		}
+		else if($(this).val() == "4"){
+			window.location.href = "../ru/index.html";
+		}
     });
 	
 	$('.confirm_btn').click(function(e) {
@@ -18,8 +21,25 @@ $(document).ready(function(e) {
 		}else if($('.modal_language').val() == "3"){
 			window.location.href = "../es/index.html";
 		}
+		else if($('.modal_language').val() == "4"){
+			window.location.href = "../ru/index.html";
+		}
     });
+	
+	
 
+	$('.modal_language').change(function(e) {
+        if($(this).val() == "1"){
+			$('.confirm_btn').html("Confirm");
+		}else if($(this).val() == "2"){
+			$('.confirm_btn').html("Confirmer");
+		}else if($(this).val() == "3"){
+			$('.confirm_btn').html("Confirmar");
+		}
+		else if($(this).val() == "4"){
+			$('.confirm_btn').html("Подтвердить");
+		}
+    });
 	
 	function openModal($modal) {
   // Note: fixed elements will also need the margin 
