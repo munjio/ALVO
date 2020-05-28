@@ -11,6 +11,12 @@ $(document).ready(function(e) {
 		else if($(this).val() == "4"){
 			window.location.href = "../ru/index.html";
 		}
+		else if($(this).val() == "5"){
+			window.location.href = "../de/index.html";
+		}
+		else if($(this).val() == "6"){
+			window.location.href = "../br/index.html";
+		}
     });
 	
 	$('.confirm_btn').click(function(e) {
@@ -23,6 +29,10 @@ $(document).ready(function(e) {
 		}
 		else if($('.modal_language').val() == "4"){
 			window.location.href = "../ru/index.html";
+		}else if($('.modal_language').val() == "5"){
+			window.location.href = "../de/index.html";
+		}else if($('.modal_language').val() == "6"){
+			window.location.href = "../br/index.html";
 		}
     });
 	
@@ -38,6 +48,12 @@ $(document).ready(function(e) {
 		}
 		else if($(this).val() == "4"){
 			$('.confirm_btn').html("Подтвердить");
+		}
+		else if($(this).val() == "5"){
+			$('.confirm_btn').html("Bestätigen");
+		}
+		else if($(this).val() == "6"){
+			$('.confirm_btn').html("Confirmar");
 		}
     });
 	
