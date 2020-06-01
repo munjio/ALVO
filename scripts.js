@@ -15,7 +15,7 @@ $(document).ready(function(e) {
 			window.location.href = "../de/index.html";
 		}
 		else if($(this).val() == "6"){
-			window.location.href = "../br/index.html";
+			window.location.href = "../pt_br/index.html";
 		}
     });
 	
@@ -32,7 +32,7 @@ $(document).ready(function(e) {
 		}else if($('.modal_language').val() == "5"){
 			window.location.href = "../de/index.html";
 		}else if($('.modal_language').val() == "6"){
-			window.location.href = "../br/index.html";
+			window.location.href = "../pt_br/index.html";
 		}
     });
 	
